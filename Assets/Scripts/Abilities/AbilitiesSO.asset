@@ -12,3 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9486c112b97ccb04599429bc6214c616, type: 3}
   m_Name: AbilitiesSO
   m_EditorClassIdentifier: 
+  data:
+  - damage: 0
+    script: {fileID: 0}
+  - damage: 0
+    script: {fileID: 0}
