@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 14709f41f44e3884897f13dacd3fe352
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2644006713305531510
+    second: ice_nova3_0
+  - first:
+      213: -8280205679400677272
+    second: ice_nova3_1
+  - first:
+      213: 73255367872292691
+    second: ice_nova3_2
+  - first:
+      213: 7414165970574530977
+    second: ice_nova3_3
+  - first:
+      213: 5946013473228678168
+    second: ice_nova3_4
+  - first:
+      213: 3239529005711131487
+    second: ice_nova3_5
+  - first:
+      213: 1125046928364490144
+    second: ice_nova3_6
+  - first:
+      213: 4741204424551543301
+    second: ice_nova3_7
+  - first:
+      213: 9209650121149755645
+    second: ice_nova3_8
+  - first:
+      213: -3254183809069893890
+    second: ice_nova3_9
+  - first:
+      213: 312414494519516045
+    second: ice_nova3_10
+  - first:
+      213: -3005304176000412032
+    second: ice_nova3_11
+  - first:
+      213: -5335596823173105802
+    second: ice_nova3_12
+  - first:
+      213: 1297093099056760345
+    second: ice_nova3_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ice_nova3_0
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 306
+        width: 108
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8bfcad17e99e4bd0800000000000000
+      internalID: -2644006713305531510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_nova3_1
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 300
+        width: 134
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86096241eccc61d80800000000000000
+      internalID: -8280205679400677272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_nova3_2
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 294
+        width: 154
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3572be37e51440100800000000000000
+      internalID: 73255367872292691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_nova3_3
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 162
+        width: 174
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a952e51ba864e660800000000000000
+      internalID: 7414165970574530977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_nova3_4
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 158
+        width: 190
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8146b7520cb748250800000000000000
+      internalID: 5946013473228678168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_nova3_5
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 147
+        width: 202
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f538cf8877e15fc20800000000000000
+      internalID: 3239529005711131487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_nova3_6
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 133
+        width: 146
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad4fc87838fc9f00800000000000000
+      internalID: 1125046928364490144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_nova3_7
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 137
+        width: 90
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 502b7ecdd442cc140800000000000000
+      internalID: 4741204424551543301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_nova3_8
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 131
+        width: 70
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df0b3c88dff3fcf70800000000000000
+      internalID: 9209650121149755645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_nova3_9
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 147
+        width: 47
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef6bf8a2111d6d2d0800000000000000
+      internalID: -3254183809069893890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_nova3_10
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 135
+        width: 33
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8bd488d35be55400800000000000000
+      internalID: 312414494519516045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_nova3_11
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 0
+        width: 232
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0865f7356c30b46d0800000000000000
+      internalID: -3005304176000412032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_nova3_12
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 0
+        width: 234
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 677701265f624f5b0800000000000000
+      internalID: -5335596823173105802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice_nova3_13
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 0
+        width: 232
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91683e12d43300210800000000000000
+      internalID: 1297093099056760345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ice_nova3_0: -2644006713305531510
+      ice_nova3_1: -8280205679400677272
+      ice_nova3_10: 312414494519516045
+      ice_nova3_11: -3005304176000412032
+      ice_nova3_12: -5335596823173105802
+      ice_nova3_13: 1297093099056760345
+      ice_nova3_2: 73255367872292691
+      ice_nova3_3: 7414165970574530977
+      ice_nova3_4: 5946013473228678168
+      ice_nova3_5: 3239529005711131487
+      ice_nova3_6: 1125046928364490144
+      ice_nova3_7: 4741204424551543301
+      ice_nova3_8: 9209650121149755645
+      ice_nova3_9: -3254183809069893890
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
