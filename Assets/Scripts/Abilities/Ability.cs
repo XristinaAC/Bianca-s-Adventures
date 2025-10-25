@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Ability : MonoBehaviour
 {
-
+    [SerializeField]
+    //Make abstracts
     public void Execute_Ability()
     {
 
