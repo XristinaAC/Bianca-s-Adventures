@@ -8,7 +8,7 @@ public class Abilities : ScriptableObject
     public struct Abilities_Data
     {
         public int damage;
-        public Ability script;
+        public GameObject script;
     }
 
     [SerializeField] public System.Collections.Generic.List<Abilities_Data> data;

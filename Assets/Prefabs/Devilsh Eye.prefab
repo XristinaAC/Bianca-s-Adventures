@@ -52,12 +52,12 @@ MonoBehaviour:
   damage: 8
   health_bar: {fileID: 0}
   health_bar_text: {fileID: 0}
+  target_damage_effect: {fileID: 0}
   speed: 4
   killed_xp: 12
   orbit_speed: 90
-  orbit_radius: 8
+  orbit_radius: 10
   stun_spell_prefab: {fileID: 7225486732157377602, guid: 94fb1a3572b9e204585fe22e44ec68de, type: 3}
-  stun_circle: {fileID: 0}
   stun_time: 1
   stun_spell_time: 3
 --- !u!58 &5414899209071874806

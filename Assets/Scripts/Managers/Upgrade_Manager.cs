@@ -155,7 +155,7 @@ public class Upgrade_Manager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
-            Play_Slash_Effects();
+            Play_Abikity_Effects();
             Slash_Creation();
         }
     }
@@ -169,7 +169,7 @@ public class Upgrade_Manager : MonoBehaviour
         new_slash.GetComponent<SlashAbility>().Initialize_Velocity(direction, 0.1f, player);
     }
 
-    void Play_Slash_Effects()
+    void Play_Abikity_Effects()
     {
         player.GetComponent<Player>().Play_Sound_Effect(s_slash);
         player.GetComponent<Player>().Get_Animator().SetBool("isSlashing", true);

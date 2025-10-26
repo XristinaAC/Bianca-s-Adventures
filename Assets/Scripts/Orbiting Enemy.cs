@@ -1,11 +1,11 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class OrbitingEnemy : Enemy
 {
     [SerializeField] float orbit_speed = 10f;
     [SerializeField] float orbit_radius = 4.0f;
     [SerializeField] GameObject stun_spell_prefab = null;
-    [SerializeField] GameObject stun_circle = null;
     [SerializeField] float stun_time = 1.0f;
     [SerializeField] float stun_spell_time = 3.0f;
 
@@ -14,7 +14,7 @@ public class OrbitingEnemy : Enemy
     float stun_spell_timer = 0;
     float current_angle = 0;
     
-    void Update()
+    public override void Enemy_Movement()
     {
         if (!Get_Target())
         {
@@ -25,7 +25,7 @@ public class OrbitingEnemy : Enemy
 
         if (Vector3.Distance(Get_Target().transform.position, transform.position) > 1.0f)
         {
-            Enemy_Movement();
+            Orbit();
             orbit_timer += Time.deltaTime * 1.5f;
             if (orbit_timer > orbit_time)
             {
@@ -35,7 +35,7 @@ public class OrbitingEnemy : Enemy
         }
     }
 
-    public override void Enemy_Movement()
+    void Orbit()
     {
         current_angle += Time.deltaTime * orbit_speed;
         float rad = current_angle * Mathf.Deg2Rad;
@@ -51,7 +51,7 @@ public class OrbitingEnemy : Enemy
         stun_spell_timer += Time.deltaTime * 0.5f;
         if (stun_spell_timer > stun_spell_time)
         {
-            stun_circle = Instantiate(stun_spell_prefab, old_pos, Quaternion.identity);
+            GameObject stun_circle = Instantiate(stun_spell_prefab, old_pos, Quaternion.identity);
             stun_circle.GetComponent<Stun_Spell>().Initialize_Stun_Time(stun_time);
             stun_spell_timer = 0.0f;
         }

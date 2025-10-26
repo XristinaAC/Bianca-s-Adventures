@@ -19,32 +19,17 @@ public class BattleManager : MonoBehaviour
     float basic_enemies_time = 0;
     int expand_pool_level = 5;
 
-    //void Initialize_Abilities_List()
-    //{
-    //    sub = new Dictionary<string, Action>();
-    //    sub.Add("Frost Spike", Frost_Ability);
-    //    sub.Add("Slash", Slash_Ability);
-    //    sub.Add("Frost Wave", Wave_Ability);
-    //}
-    
-    void Start()
-    {
-        //Initialize_Abilities_List();
-    }
-
     public void Battle()
     {
-        if (player.activeInHierarchy)
-        {
+        //if (player.activeInHierarchy)
+        //{
             if (player.GetComponent<Player>().Has_Ability())
             {
                 this.GetComponent<Upgrade_Manager>().Execute_Ability();
-            //    Action ability = sub[player.GetComponent<Player>().Get_Gained_Ability()];
-            //    ability();
             }
             Enemy_Handler();
             Handle_Enemy_Attack();
-        }
+        //}
 
         Expand_Pool_Faster();
     }
@@ -114,30 +99,6 @@ public class BattleManager : MonoBehaviour
     {
         frost_orb_ability.GetComponent<FrostSpikeAbility>().Frost_Spike_Creation();
     }
-
-
-    //void Slash_Ability()
-    //{
-    //    if (Input.GetMouseButtonDown(1))
-    //    {
-    //        Play_Slash_Effects();
-    //        Slash_Creation();
-    //    }
-    //}
-
-    //void Play_Slash_Effects()
-    //{
-    //    player.GetComponent<Player>().Play_Sound_Effect(s_slash);
-    //    player.GetComponent<Player>().Get_Animator().SetBool("isSlashing", true);
-    //}
-
-    //void Slash_Creation()
-    //{
-    //    GameObject new_slash = Instantiate(slash, player.transform.position, Quaternion.identity);
-    //    Vector3 direction = new Vector3(player.transform.position.x - ability_to_direction.transform.position.x, 0, 0).normalized;
-    //    new_slash.transform.rotation = player.transform.rotation;
-    //    new_slash.GetComponent<SlashAbility>().Initialize_Velocity(direction, 0.1f, player);
-    //}
 
     void Wave_Ability()
     {
