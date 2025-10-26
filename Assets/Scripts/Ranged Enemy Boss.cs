@@ -9,14 +9,9 @@ public class RangedEnemyBoss : Ranged_Enemy
 
     float p_shoot_timer = 0;
   
-    void Update()
+    public override void Attack(float attack_distance)
     {
-        Extra_Attack();
-    }
-
-    void Extra_Attack()
-    {
-        base.Attack(1);
+        base.Attack(attack_distance);
         Vector3 distance = (Get_Target().transform.position - transform.position).normalized;
         p_shoot_timer += Time.deltaTime * 0.2f;
         if (p_shoot_timer > 0.5f)
