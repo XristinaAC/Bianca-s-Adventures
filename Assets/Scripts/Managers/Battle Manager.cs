@@ -21,15 +21,10 @@ public class BattleManager : MonoBehaviour
 
     public void Battle()
     {
-        //if (player.activeInHierarchy)
-        //{
-            if (player.GetComponent<Player>().Has_Ability())
-            {
-                this.GetComponent<Upgrade_Manager>().Execute_Ability();
-            }
-            Enemy_Handler();
-            Handle_Enemy_Attack();
-        //}
+        
+        this.GetComponent<Upgrade_Manager>().Execute_Ability();
+        Enemy_Handler();
+        Handle_Enemy_Attack();
 
         Expand_Pool_Faster();
     }

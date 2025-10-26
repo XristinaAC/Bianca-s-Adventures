@@ -1603,12 +1603,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 515107936}
         m_TargetAssemblyTypeName: Upgrade_Manager, Assembly-CSharp
-        m_MethodName: Get_Frost_Spike_Ability
-        m_Mode: 1
+        m_MethodName: Get_Ability
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3389,8 +3389,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 515107936}
         m_TargetAssemblyTypeName: Upgrade_Manager, Assembly-CSharp
-        m_MethodName: Get_Slash_Ability
-        m_Mode: 1
+        m_MethodName: Get_Ability
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6369,12 +6369,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 515107936}
         m_TargetAssemblyTypeName: Upgrade_Manager, Assembly-CSharp
-        m_MethodName: Get_Frost_Wave_Ability
-        m_Mode: 1
+        m_MethodName: Get_Ability
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

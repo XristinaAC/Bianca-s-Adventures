@@ -184,11 +184,11 @@ public class Player : BattleStatsManager
         level_xp_bar.fillAmount = 0;
     }
 
-    public void Set_Ability(bool has_ability, string ability)
-    {
-        this.has_ability = has_ability;
-        this.ability = ability;
-    }
+    //public void Set_Ability(bool has_ability, string ability)
+    //{
+    //    this.has_ability = has_ability;
+    //    this.ability = ability;
+    //}
 
     public bool Has_Ability()
     {

@@ -22,16 +22,16 @@ public class Upgrade_Manager : MonoBehaviour
     [SerializeField] int upgrade_speed = 1;
     [SerializeField] int upgrade_damage = 2;
 
-    Dictionary<string, Action> abilities;
+    Dictionary<int, Action> abilities;
 
     bool fade = true;
-    string ability = "";
+    int ability = -1;
 
     void Initialize_Abilities_List()
     {
-        abilities = new Dictionary<string, Action>();
+        abilities = new Dictionary<int, Action>();
         //abilities.Add("Frost Spike", Frost_Ability);
-        abilities.Add("Slash", Slash_Ability);
+        abilities.Add(0, Slash_Ability);
         //abilitiesb.Add("Frost Wave", Wave_Ability);
     }
 
@@ -42,9 +42,7 @@ public class Upgrade_Manager : MonoBehaviour
 
 
     void Start()
-    {
-       // Initialize_Abilities_List();
-
+    { 
         for (int i = 0; i < abilities_upgrades_menu.Count; ++i)
         {
             abilities_upgrades_menu[i].SetActive(false);
@@ -103,27 +101,18 @@ public class Upgrade_Manager : MonoBehaviour
         Disable_Level_Up_Menu();
     }
 
-    public void Get_Slash_Ability()
+    public void Get_Ability(int ability_id)
     {
-        player.GetComponent<Player>().Set_Ability(true, "Slash");
-        ability = "Slash";
-        Disable_Level_Up_Menu();
-    }
-
-    public void Get_Frost_Spike_Ability()
-    {
-        //player.GetComponent<Player>().Set_Ability(true, "Slash");
-        Disable_Level_Up_Menu();
-    }
-
-    public void Get_Frost_Wave_Ability()
-    {
-        //player.GetComponent<Player>().Set_Ability(true, "Slash");
+        ability = ability_id;
         Disable_Level_Up_Menu();
     }
 
     public void Execute_Ability()
     {
+        if(ability == -1)
+        {
+            return;
+        }
         abilities[ability]();
     }
 
