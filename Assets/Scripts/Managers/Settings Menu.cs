@@ -68,7 +68,6 @@ public class SettingsMenu : MonoBehaviour
 
     public void Res_Left_Arrow()
     {
-        AudioManager.Instance.PlaySFX(AudioManager.Instance.woodButtonEffecct);
         selected_resolution--;
         if(selected_resolution < 0)
         {
@@ -80,6 +79,7 @@ public class SettingsMenu : MonoBehaviour
 
     public void Res_Right_Arrow()
     {
+       
         selected_resolution++;
         if (selected_resolution > resolutions.Count - 1)
         {
@@ -91,6 +91,7 @@ public class SettingsMenu : MonoBehaviour
 
     public void Update_Resolutions_Text()
     {
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.woodButtonEffecct);
         resolutions_text.text = resolutions[selected_resolution].x.ToString() + " x " + resolutions[selected_resolution].y.ToString();
     }
 
