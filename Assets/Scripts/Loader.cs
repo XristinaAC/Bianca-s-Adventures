@@ -20,8 +20,8 @@ public class Loader : MonoBehaviour
 
         if (GetComponent<AudioSource>())
         {
-            SettingsMenu.sm_instance.Set_Audio_Source(this.GetComponent<AudioSource>());
-            this.GetComponent<AudioSource>().volume = SettingsMenu.sm_instance.Get_Audio_Value();
+            //SettingsMenu.sm_instance.Set_Audio_Source(this.GetComponent<AudioSource>());
+            //this.GetComponent<AudioSource>().volume = SettingsMenu.sm_instance.Get_Audio_Value();
         }
     }
 }

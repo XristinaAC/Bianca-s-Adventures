@@ -7,7 +7,7 @@ public class SettingsMenu : MonoBehaviour
 {
     public static SettingsMenu sm_instance = null;
 
-    [SerializeField] Slider sound_volume = null;
+    [SerializeField] Slider music_volume = null;
     [SerializeField] AudioSource audio = null;
     [SerializeField] Toggle fullscreen = null;
     [SerializeField] Toggle VSync = null;
@@ -35,7 +35,7 @@ public class SettingsMenu : MonoBehaviour
     {  
         this.gameObject.SetActive(false);
         fullscreen.isOn = Screen.fullScreen;
-        sound_volume.value = audio.volume;
+        //sound_volume.value = audio.volume;
 
         if (QualitySettings.vSyncCount == 0)
         {
@@ -49,7 +49,7 @@ public class SettingsMenu : MonoBehaviour
 
     public float Get_Audio_Value()
     {
-        return sound_volume.value;
+        return music_volume.value;
     }
 
     public void Set_Audio_Source(AudioSource new_audio)
@@ -67,7 +67,7 @@ public class SettingsMenu : MonoBehaviour
 
     public void Update_Sound_Volume()
     {
-        audio.volume = sound_volume.value;
+        audio.volume = music_volume.value;
     }
 
     public void Res_Left_Arrow()

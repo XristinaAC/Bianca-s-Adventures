@@ -41,7 +41,8 @@ public class GameManager : MonoBehaviour
         {
             playing_state = false;
         }
-           
+
+        AudioManager.Instance.PlayMusic(AudioManager.Instance.inGameMusic);
     }
 
     public void Handle_Player_Death()

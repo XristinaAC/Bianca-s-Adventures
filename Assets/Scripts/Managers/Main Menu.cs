@@ -10,6 +10,11 @@ public class MainMenu : MonoBehaviour
         SaveManager.save_instance.Load_Data();
     }
 
+    private void Start()
+    {
+        AudioManager.Instance.PlayMusic(AudioManager.Instance.mainMenuMusic);
+    }
+
     public void Start_Game()
     {
         SceneManager.LoadSceneAsync("VampireSurvivors");
