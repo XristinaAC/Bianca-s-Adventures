@@ -30,22 +30,22 @@ public class MainMenu : MonoBehaviour
         menu_action[id]();
     }
 
-    public void Start_Game()
+    private void Start_Game()
     {
         SceneManager.LoadSceneAsync("VampireSurvivors");
     }
 
-    public void Open_Settings_Menu()
+    private void Open_Settings_Menu()
     {
         SettingsMenu.sm_instance.gameObject.SetActive(true);
     }
 
-    public void Open_Stats_Menu()
+    private void Open_Stats_Menu()
     {
         stats_panel.SetActive(true);
     }
 
-    public void Quit_Game()
+    private void Quit_Game()
     {
         Application.Quit();
     }

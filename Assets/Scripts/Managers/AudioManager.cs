@@ -63,6 +63,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] public AudioClip mainMenuMusic;
     [SerializeField] public AudioClip inGameMusic;
     [SerializeField] public AudioClip buttonEffecct;
+    [SerializeField] public AudioClip woodButtonEffecct;
 
     private void Awake()
     {

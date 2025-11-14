@@ -59,6 +59,7 @@ public class SettingsMenu : MonoBehaviour
 
     public void Close_Settings()
     {
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.buttonEffecct);
         if (this.gameObject.activeInHierarchy)
         {
             this.gameObject.SetActive(false);
@@ -67,6 +68,7 @@ public class SettingsMenu : MonoBehaviour
 
     public void Res_Left_Arrow()
     {
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.woodButtonEffecct);
         selected_resolution--;
         if(selected_resolution < 0)
         {
@@ -94,6 +96,7 @@ public class SettingsMenu : MonoBehaviour
 
     public void Apply_Changes()
     {
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.buttonEffecct);
         if (VSync.isOn)
         {
             QualitySettings.vSyncCount = 1;

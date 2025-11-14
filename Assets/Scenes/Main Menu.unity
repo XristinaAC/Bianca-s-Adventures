@@ -4222,6 +4222,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 22442ab5f79789d4184c0833bbadb784, type: 3}
     - target: {fileID: 3172115196276440961, guid: 980354fe4f99bbc4082e768b657ee587, type: 3}
+      propertyPath: woodButtonEffecct
+      value: 
+      objectReference: {fileID: 8300000, guid: 06dab8f5578f82d4ba05ba8a924b3db8, type: 3}
+    - target: {fileID: 3172115196276440961, guid: 980354fe4f99bbc4082e768b657ee587, type: 3}
       propertyPath: effects.Array.size
       value: 0
       objectReference: {fileID: 0}
