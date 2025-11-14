@@ -65,11 +65,6 @@ public class SettingsMenu : MonoBehaviour
         }
     }
 
-    public void Update_Sound_Volume()
-    {
-        audio.volume = music_volume.value;
-    }
-
     public void Res_Left_Arrow()
     {
         selected_resolution--;

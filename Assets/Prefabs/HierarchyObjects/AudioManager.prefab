@@ -177,14 +177,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MusicSource: {fileID: 2933879287966816682}
   SFXSource: {fileID: 5658484004872670503}
-  BackgroundSFXSource: {fileID: 0}
   audioMixer: {fileID: 24100000, guid: 13166b8822d0d544d8c745dedc3649d0, type: 2}
   MusicSlider: {fileID: 1213434622668624107, guid: 38e9b4e84fbef3d4ea82dd68ddbdc39c, type: 3}
   MasterSlider: {fileID: 7650338713978103135, guid: c2954e85f6346f14e9719565e78138e2, type: 3}
+  SFXSlider: {fileID: 8236228881818895653, guid: 139acb056dac36347af2814917d7497b, type: 3}
   music: []
   effects: []
   mainMenuMusic: {fileID: 8300000, guid: f5cc667352aae924e96b9c25fb5d0d94, type: 3}
   inGameMusic: {fileID: 8300000, guid: 1874e3a507d1f8a40ba2b4dfa8ae6c63, type: 3}
+  buttonEffecct: {fileID: 8300000, guid: 22442ab5f79789d4184c0833bbadb784, type: 3}
 --- !u!1 &9107587956763529845
 GameObject:
   m_ObjectHideFlags: 0
