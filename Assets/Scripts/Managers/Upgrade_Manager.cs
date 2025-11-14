@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditor.Playables;
 using UnityEngine;
 
 public class Upgrade_Manager : MonoBehaviour
