@@ -47,14 +47,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 279b2f7be98d41346a4f658a74b5f038, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  max_health: 5
-  current_health: 5
+  max_health: 10
+  current_health: 10
   damage: 2
   health_bar: {fileID: 0}
   health_bar_text: {fileID: 0}
+  target_damage_effect: {fileID: 6553390974550527493, guid: 854adba4b8bb03c4889eb9a712066804, type: 3}
   speed: 1
   killed_xp: 2
-  target_damage_effect: {fileID: 6553390974550527493, guid: 854adba4b8bb03c4889eb9a712066804, type: 3}
 --- !u!58 &5414899209071874806
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -89,8 +89,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.01590751, y: 0}
-  m_Radius: 0.40985706
+  m_Offset: {x: -0.018768456, y: 0}
+  m_Radius: 0.5138864
 --- !u!50 &3400809912909482824
 Rigidbody2D:
   serializedVersion: 5
@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 2838704057680639429}
   - component: {fileID: 8157272495648283157}
   m_Layer: 0
-  m_Name: Skeleton
+  m_Name: Zombie Mouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -144,7 +144,7 @@ Transform:
   m_GameObject: {fileID: 5448167216574190634}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1915, y: 0.3915, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 8.83677, y: 7.9562225, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

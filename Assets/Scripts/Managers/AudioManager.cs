@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -65,6 +66,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] public AudioClip buttonEffecct;
     [SerializeField] public AudioClip woodButtonEffecct;
 
+    bool can_play = true;
+
     private void Awake()
     {
         if (Instance == null)
@@ -105,8 +108,23 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySFX(AudioClip sfxEffect)
     {
-        SFXSource.clip = sfxEffect;
-        SFXSource.Play();
+        if(SFXSource.isPlaying)
+        {
+            can_play = false;
+            //SFXSource.Stop();
+            StartCoroutine(Reset());
+        }
+
+        //SFXSource.clip = sfxEffect;
+        SFXSource.PlayOneShot(sfxEffect);
+
+        //StartCoroutine(Reset());
+    }
+
+    IEnumerator Reset()
+    {
+        yield return new WaitForSeconds(0.2f);
+        can_play = true;
     }
 
     //public void PlaySFX(effectsAudio effectT)

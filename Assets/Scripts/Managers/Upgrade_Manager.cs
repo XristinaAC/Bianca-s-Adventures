@@ -158,7 +158,7 @@ public class Upgrade_Manager : MonoBehaviour
 
     void Play_Abikity_Effects()
     {
-        player.GetComponent<Player>().Play_Sound_Effect(s_slash);
+        AudioManager.Instance.PlaySFX(s_slash);
         player.GetComponent<Player>().Get_Animator().SetBool("isSlashing", true);
     }
 }

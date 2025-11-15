@@ -59,12 +59,13 @@ public class EnemyManager : MonoBehaviour
 
     void Play_Enemy_Death_Effects(GameObject enemy)
     {
-        enemy_audio.clip = s_enemy_death;
-        enemy_audio.Play();
+        //enemy_audio.clip = s_enemy_death;
+        //enemy_audio.Play();
         Transform particle_position = enemy.transform;
         ParticleSystem enemy_death = Instantiate(death_particle_effect, particle_position.position, Quaternion.identity);
         enemy_death.Play();
-        Destroy(enemy_death, 0.5f);
+        AudioManager.Instance.PlaySFX(s_enemy_death);
+        Destroy(enemy_death, 2f);
     }
   
     void Updating_Boss_Level_Spawn(GameObject enemy)

@@ -21,9 +21,7 @@ public class Player : BattleStatsManager
     [SerializeField] TMP_Text ui_score_text = null;
     [SerializeField] TMP_Text ui_level_text = null;
 
-
     Animator animator = null;
-    AudioSource audio = null;
     int level = 1;
     int current_XP = 0;
     int LevelingUp_XP = 10;
@@ -41,7 +39,6 @@ public class Player : BattleStatsManager
         level_xp_bar.fillAmount = 0;
         has_ability = false;
         ability = "";
-        audio = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -92,14 +89,14 @@ public class Player : BattleStatsManager
         if (Input.GetMouseButtonDown(0))
         {
             animator.SetBool("isAttacking", true);
-            Play_Sound_Effect(s_sword_swing);
+            AudioManager.Instance.PlaySFX(s_sword_swing);
         }
     }
 
     public void Upgrading(bool upgrading)
     {
         animator.SetBool("isUpgrading", upgrading);
-        Play_Sound_Effect(s_upgrading);
+        AudioManager.Instance.PlaySFX(s_upgrading);
     }
 
     void Finish_Upgrading()
@@ -123,14 +120,14 @@ public class Player : BattleStatsManager
 
     void Attack()
     {
-        Collider2D[] col = Physics2D.OverlapCircleAll(battle_pos.position, 0.3f, enemyLayer);
+        Collider2D[] col = Physics2D.OverlapCircleAll(battle_pos.position, 0.5f, enemyLayer);
         if (col.Length > 0)
         {
             for(int i=0; i < col.Length;++i)
             {
+                AudioManager.Instance.PlaySFX(s_hitting_enemy);
                 if (enemy_damage_text != null)
                 {
-                    Play_Sound_Effect(s_hitting_enemy);
                     Set_Damage_Text(col[i]);
                     col[i].GetComponent<Enemy>().Take_Damage(Get_Damage());
                 }
@@ -154,7 +151,7 @@ public class Player : BattleStatsManager
             level++;
             current_XP = 0;
             LevelingUp_XP += 5;
-            Play_Sound_Effect(s_level_up);
+            AudioManager.Instance.PlaySFX(s_level_up);
             ui_level_text.text = "Level: " + level.ToString();
             return true;
         }
@@ -184,12 +181,6 @@ public class Player : BattleStatsManager
         level_xp_bar.fillAmount = 0;
     }
 
-    //public void Set_Ability(bool has_ability, string ability)
-    //{
-    //    this.has_ability = has_ability;
-    //    this.ability = ability;
-    //}
-
     public bool Has_Ability()
     {
         return has_ability;
@@ -198,12 +189,6 @@ public class Player : BattleStatsManager
     public void Upgrade_Speed(float upgrade)
     {
         speed += upgrade;
-    }
-
-    public void Play_Sound_Effect(AudioClip sound_effect)
-    {
-        audio.clip = sound_effect;
-        audio.Play();
     }
 
     public int Get_Level()
