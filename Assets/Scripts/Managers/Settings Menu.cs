@@ -79,7 +79,6 @@ public class SettingsMenu : MonoBehaviour
 
     public void Res_Right_Arrow()
     {
-       
         selected_resolution++;
         if (selected_resolution > resolutions.Count - 1)
         {
