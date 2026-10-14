@@ -30,6 +30,7 @@ public class MainMenu : MonoBehaviour
         menu_action[id]();
     }
 
+    //Starting the Game
     private void Start_Game()
     {
         SceneManager.LoadSceneAsync("VampireSurvivors");
